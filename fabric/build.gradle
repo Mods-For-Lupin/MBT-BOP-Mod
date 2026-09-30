@@ -18,6 +18,8 @@ dependencies {
 
   modImplementation 'maven.modrinth:monolib:fabric-1.21.1-4.1.0'
   modImplementation 'maven.modrinth:biomes-o-plenty:21.1.0.14-fabric,1.21.1'
+  modRuntimeOnly "com.github.glitchfiend:GlitchCore-fabric:${minecraft_version}-${glitchcore_version}"
+  modRuntimeOnly "com.github.glitchfiend:TerraBlender-fabric:${minecraft_version}-${terrablender_version}"
 }
 
 loom {

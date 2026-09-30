@@ -27,6 +27,8 @@ neoForge {
     }
 }
 
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
 configurations {
     commonJava {
         canBeResolved = false
@@ -40,6 +42,6 @@ configurations {
 
 artifacts {
     commonJava sourceSets.main.java.sourceDirectories.singleFile
-    commonResources sourceSets.main.resources.sourceDirectories.singleFile
+    sourceSets.main.resources.srcDirs.each { dir -> commonResources dir }
 }
 
