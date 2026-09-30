@@ -15,6 +15,9 @@ dependencies {
     implementation 'com.electronwill.night-config:toml:3.6.0'
     include 'com.electronwill.night-config:core:3.6.0'
     include 'com.electronwill.night-config:toml:3.6.0'
+
+  modImplementation 'maven.modrinth:monolib:fabric-1.21.1-4.1.0'
+  modImplementation 'maven.modrinth:biomes-o-plenty:21.1.0.14-fabric,1.21.1'
 }
 
 loom {
