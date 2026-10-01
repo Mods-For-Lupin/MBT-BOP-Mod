@@ -16,7 +16,8 @@ public class MBTLanguageProvider extends LanguageProvider {
 
   @Override
   protected void addTranslations() {
-    add("itemGroup.moreBeautifulTorchesBOP", Constants.MOD_NAME);
+    // add("itemGroup.moreBeautifulTorchesBOP", Constants.MOD_NAME);
+    add("itemGroup.moreBeautifulTorchesBOP", "More Beautiful Torches: BOP");
 
     for (TorchEntry entry : ModBlocks.TORCHES) {
       addTorch(entry, "Torch", "Wall Torch");
