@@ -11,7 +11,7 @@ dependencies {
 
   compileOnly 'com.electronwill.night-config:toml:3.6.0'
 
-  implementation 'monolib:monolib-common:26.1.2-4.1.0'
+  implementation 'monolib:monolib-common:26.1.2-4.1.1'
 }
 
 neoForge {
@@ -22,6 +22,8 @@ neoForge {
         accessTransformers.from(at.absolutePath)
     }
 }
+
+sourceSets.main.resources.srcDir 'src/generated/resources'
 
 configurations {
     commonJava {
@@ -36,7 +38,7 @@ configurations {
 
 artifacts {
     commonJava sourceSets.main.java.sourceDirectories.singleFile
-    commonResources sourceSets.main.resources.sourceDirectories.singleFile
+    sourceSets.main.resources.srcDirs.each { dir -> commonResources dir }
 }
 
 // Implement mcgradleconventions loader attribute

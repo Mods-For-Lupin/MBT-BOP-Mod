@@ -11,6 +11,11 @@ dependencies {
     implementation 'com.electronwill.night-config:toml:3.6.0'
     include 'com.electronwill.night-config:core:3.6.0'
     include 'com.electronwill.night-config:toml:3.6.0'
+
+    implementation "maven.modrinth:monolib:fabric-26.1.2-4.1.1"
+    implementation "maven.modrinth:biomes-o-plenty:${biomesoplenty_version}-fabric,26.1.2"
+    runtimeOnly "com.github.glitchfiend:GlitchCore-fabric:${minecraft_version}-${glitchcore_version}"
+    runtimeOnly "com.github.glitchfiend:TerraBlender-fabric:${minecraft_version}-${terrablender_version}"
 }
 
 loom {

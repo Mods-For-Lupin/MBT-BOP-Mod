@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.jason13official.examplemod.ExampleModFabric"
+      "io.github.jason13official.more_beautiful_torches_bop.MoreBeautifulTorchesBOPFabric"
     ],
     "client": [
-      "io.github.jason13official.examplemod.ExampleModClientFabric"
+      "io.github.jason13official.more_beautiful_torches_bop.MoreBeautifulTorchesBOPClientFabric"
     ]
   },
   "mixins": [
@@ -31,10 +31,9 @@
     "fabric-api": "*",
     "minecraft": "${fabric_minecraft_version_range}",
     "java": ">=${java_version}",
-    "monolib": "*"
+    "monolib": "*",
+    "biomesoplenty": "*"
   },
-  "suggests": {
-    "another-mod": "*"
-  }
+  "suggests": {}
 }
   

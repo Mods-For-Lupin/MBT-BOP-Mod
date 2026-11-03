@@ -29,6 +29,15 @@ repositories {
         name = 'BlameJared'
         url = 'https://maven.blamejared.com'
     }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = 'Glitchfiend'
+                url = 'https://maven.minecraftforge.net'
+            }
+        }
+        filter { includeGroup('com.github.glitchfiend') }
+    }
     maven { url "https://cursemaven.com" }
     maven { url "https://api.modrinth.com/maven" }
 
@@ -46,13 +55,13 @@ repositories {
 
 sourcesJar {
     from(rootProject.file('LICENSE')) {
-        rename { "${it}_${mod_name}" }
+        rename { "${it}_${mod_id}" }
     }
 }
 
 jar {
     from(rootProject.file('LICENSE')) {
-        rename { "${it}_${mod_name}" }
+        rename { "${it}_${mod_id}" }
     }
 
     manifest {
